@@ -36,6 +36,8 @@
 #include "mdss_smmu.h"
 #include "mdss_debug.h"
 
+#define SZ_4G 0xF0000000
+
 static DEFINE_MUTEX(mdp_iommu_lock);
 
 void mdss_iommu_lock(void)

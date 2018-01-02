@@ -162,6 +162,7 @@ struct qusb_phy {
 	void __iomem		*tune2_efuse_reg;
 	void __iomem		*ref_clk_base;
 	void __iomem		*tcsr_phy_clk_scheme_sel;
+	void __iomem		*tcsr_phy_lvl_shift_keeper;
 
 	struct clk		*ref_clk_src;
 	struct clk		*ref_clk;
