@@ -6175,13 +6175,10 @@ static int afe_map_cal_data(int32_t cal_type,
 	}
 	cal_block->map_data.q6map_handle = atomic_read(&this_afe.
 		mem_map_cal_handles[cal_index]);
-<<<<<<< HEAD
 	mutex_unlock(&this_afe.afe_cmd_lock);
-=======
 	pr_err("%s cal_type %d map_addr = 0x%pa, size = %zd, map_handle %d\n",
 				__func__, cal_type, &cal_block->cal_data.paddr,
 				cal_block->map_data.map_size, cal_block->map_data.q6map_handle);
->>>>>>> 274dfcc31de... sound: import Huawei changes
 done:
 	return ret;
 }
